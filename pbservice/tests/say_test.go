@@ -14,7 +14,7 @@ import (
 var wg sync.WaitGroup
 
 func TestSay(t *testing.T) {
-	for ii := 0; ii < 100000; ii++ {
+	for ii := 0; ii < 50000; ii++ {
 		wg.Add(1)
 		go gotestfunc(ii)
 	}
