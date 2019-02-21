@@ -6,15 +6,33 @@ import (
 	"github.com/zhwei820/natsmicro/pb/natsmicro/say"
 	"github.com/zhwei820/natsmicro/pbservice"
 	_ "github.com/zhwei820/natsmicro/utils/gotests"
+	"sync"
 	"testing"
 	"time"
 )
 
-func TestSay(t *testing.T) {
-	for ii := 0; ii < 10000; ii++ {
-		testfunc()
-	}
+var wg sync.WaitGroup
 
+func TestSay(t *testing.T) {
+	for ii := 0; ii < 100000; ii++ {
+		wg.Add(1)
+		go gotestfunc(ii)
+	}
+	wg.Wait()
+	time.Sleep(500 * time.Millisecond)
+
+}
+
+func gotestfunc(ii int) {
+
+	out := say.SayOutput{}
+	in := say.SayInput{Query: "testttt", PageNumber: int64(ii), ResultPerPage: 10}
+	inb, _ := in.Marshal()
+	err := out.Unmarshal(NatsReq("sayhello", inb)) // 请求接口
+	if err != nil {
+		log.Error().Msg(fmt.Sprintf("Unmarshal SayOutput failed: %v", err.Error()))
+	}
+	wg.Done()
 }
 
 func BenchmarkSay(b *testing.B) {
@@ -36,7 +54,7 @@ func testfunc() {
 }
 
 func NatsReq(subject string, inb []byte) ([]byte) {
-	msg, err := pbservice.NatsConn.Request(subject, inb, 5000*time.Millisecond)
+	msg, err := pbservice.NatsConn.Request(subject, inb, 5*time.Second)
 	if err != nil {
 		log.Error().Msg(fmt.Sprintf("Request failed: %v", err.Error()))
 		return []byte{}
