@@ -1,11 +1,10 @@
-package main
+package nrpc_server
 
 import (
 	"context"
 	"fmt"
 	"log"
 	"os"
-	"os/signal"
 	"time"
 
 	// This is the package containing the generated *.pb.go and *.nrpc.go
@@ -25,7 +24,7 @@ func (s *server) SayHello(ctx context.Context, req helloworld.HelloRequest) (res
 	return
 }
 
-func main() {
+func StartServer() {
 	var natsURL = nats.DefaultURL
 	if len(os.Args) == 2 {
 		natsURL = os.Args[1]
@@ -57,8 +56,5 @@ func main() {
 	}
 	// Keep running until ^C.
 	fmt.Println("server is running, ^C quits.")
-	c := make(chan os.Signal, 1)
-	signal.Notify(c, os.Interrupt)
-	<-c
-	close(c)
+	select {}
 }

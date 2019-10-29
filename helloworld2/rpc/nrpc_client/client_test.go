@@ -11,7 +11,7 @@ import (
 	// This is the package containing the generated *.pb.go and *.nrpc.go
 	// files.
 	nats "github.com/nats-io/nats.go"
-	"natsmicro/helloworld/rpc/proto/helloworld"
+	"natsmicro/helloworld2/rpc/proto/helloworld"
 )
 
 var wg sync.WaitGroup

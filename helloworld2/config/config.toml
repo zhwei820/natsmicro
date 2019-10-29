@@ -1,5 +1,5 @@
 #监听端口
-port = 8198
+port = 8197
 
 #日志目录，默认log目录
 logpath = "log"

@@ -3,12 +3,12 @@ package nrpc_client
 import (
 	"github.com/nats-io/nats.go"
 	"log"
-	"natsmicro/helloworld/rpc/proto/helloworld"
+	"natsmicro/helloworld2/rpc/proto/helloworld"
 	"os"
 	"time"
 )
 
-var HelloWordNrpcCli *helloworld.GreeterClient
+var HelloWordNrpcCli *helloworld.Greeter2Client
 
 func init() {
 	Init()
@@ -24,7 +24,6 @@ func Init() {
 		log.Fatal(err)
 	}
 	//defer nc.Close()
-
 	// This is our generated client.
-	HelloWordNrpcCli = helloworld.NewGreeterClient(nc)
+	HelloWordNrpcCli = helloworld.NewGreeter2Client(nc)
 }
