@@ -45,7 +45,7 @@ func StartServer() {
 	// Start a NATS subscription using the handler. You can also use the
 	// QueueSubscribe() method for a load-balanced set of servers.
 	//sub, err := nc.Subscribe(h.Subject(), h.Handler)
-	for ii := 0; ii <= 100; ii += 1 {
+	for ii := 0; ii <= 1000; ii += 1 {
 		sub, err := nc.QueueSubscribe(h.Subject(), "groupname", h.Handler)
 
 		if err != nil {
