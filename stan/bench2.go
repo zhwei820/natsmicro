@@ -15,6 +15,8 @@ var donewg sync.WaitGroup
 func main() {
 	//stan.Connect(clusterID, clientID, ops ...Option)
 	ns, err := stan.Connect("test", "myID3", stan.NatsURL(conf.NatsUrl))
+	println(conf.NatsUrl)
+	//ns, err := stan.Connect("test-cluster", "myID3", stan.NatsURL(nats.DefaultURL))
 
 	if err != nil {
 		println(err.Error())
@@ -32,7 +34,7 @@ func main() {
 	//	log.Printf("sub1: %s\n", string(m.Data))
 	//}, stan.StartWithLastReceived())
 
-	N := 100000
+	N := 1000000
 	//N := 100000
 	donewg.Add(N)
 
