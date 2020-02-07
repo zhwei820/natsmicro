@@ -3,6 +3,7 @@ package nrpc_server
 import (
 	"context"
 	"fmt"
+	"github.com/gogf/gf/os/glog"
 	"log"
 	"os"
 	"time"
@@ -22,6 +23,7 @@ type server struct{}
 // the Greeter service.
 func (s *server) SayHello(ctx context.Context, req helloworld.HelloRequest) (resp helloworld.HelloReply, err error) {
 	resp.Message = "Hello " + req.Name
+	glog.Info(resp.Message)
 	time.Sleep(50 * time.Millisecond)
 	return
 }
