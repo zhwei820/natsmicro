@@ -1,11 +1,13 @@
 package nrpc_client
 
 import (
-	"github.com/nats-io/nats.go"
 	"log"
+	"natsmicro/conf"
 	"natsmicro/helloworld/rpc/proto/helloworld"
 	"os"
 	"time"
+
+	"github.com/nats-io/nats.go"
 )
 
 var HelloWordNrpcCli *helloworld.GreeterClient
@@ -14,7 +16,7 @@ func init() {
 	Init()
 }
 func Init() {
-	var natsURL = nats.DefaultURL
+	var natsURL = conf.NatsUrl
 	if len(os.Args) == 2 {
 		natsURL = os.Args[1]
 	}

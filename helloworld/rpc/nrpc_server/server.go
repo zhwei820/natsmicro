@@ -9,8 +9,10 @@ import (
 
 	// This is the package containing the generated *.pb.go and *.nrpc.go
 	// files.
-	"github.com/nats-io/nats.go"
+	"natsmicro/conf"
 	"natsmicro/helloworld/rpc/proto/helloworld"
+
+	"github.com/nats-io/nats.go"
 )
 
 // server implements the helloworld.GreeterServer interface.
@@ -25,7 +27,7 @@ func (s *server) SayHello(ctx context.Context, req helloworld.HelloRequest) (res
 }
 
 func StartServer() {
-	var natsURL = nats.DefaultURL
+	var natsURL = conf.NatsUrl
 	if len(os.Args) == 2 {
 		natsURL = os.Args[1]
 	}

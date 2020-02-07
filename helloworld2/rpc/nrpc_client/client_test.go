@@ -10,8 +10,10 @@ import (
 
 	// This is the package containing the generated *.pb.go and *.nrpc.go
 	// files.
-	nats "github.com/nats-io/nats.go"
+	"natsmicro/conf"
 	"natsmicro/helloworld2/rpc/proto/helloworld"
+
+	nats "github.com/nats-io/nats.go"
 )
 
 var wg sync.WaitGroup
@@ -33,7 +35,7 @@ func work(cli *helloworld.GreeterClient) {
 
 func TestInit(t *testing.T) {
 
-	var natsURL = nats.DefaultURL
+	var natsURL = conf.NatsUrl
 	if len(os.Args) == 2 {
 		natsURL = os.Args[1]
 	}

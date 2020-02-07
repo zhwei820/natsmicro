@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="64e28044-536e-451f-878c-0205438eb5e6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/config.go" beforeDir="false" afterPath="$PROJECT_DIR$/conf/config.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stan/bench2.go" beforeDir="false" afterPath="$PROJECT_DIR$/stan/bench2.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,30 +14,33 @@
     <session id="-599595476">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.40" value="1" />
-          <entry key="project.open.time.42" value="1" />
+          <entry key="project.open.time.42" value="2" />
           <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.48" value="1" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.51" value="1" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.51" value="2" />
           <entry key="project.open.time.54" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.86" value="1" />
           <entry key="project.open.time.92" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Dockerfile" value="2" />
-          <entry key="MD" value="3" />
+          <entry key="MD" value="4" />
           <entry key="gitattributes" value="1" />
           <entry key="gitignore" value="3" />
-          <entry key="go" value="76" />
+          <entry key="go" value="78" />
           <entry key="log" value="1" />
-          <entry key="mod" value="5" />
+          <entry key="mod" value="6" />
           <entry key="proto" value="5" />
           <entry key="py" value="16" />
           <entry key="sum" value="4" />
@@ -50,9 +51,9 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="DTD" value="5" />
-          <entry key="Go" value="76" />
-          <entry key="PLAIN_TEXT" value="20" />
+          <entry key="DTD" value="6" />
+          <entry key="Go" value="78" />
+          <entry key="PLAIN_TEXT" value="21" />
           <entry key="Python" value="16" />
           <entry key="TOML file" value="7" />
           <entry key="YAML" value="2" />
@@ -62,7 +63,7 @@
         <counts>
           <entry key="Dockerfile" value="14" />
           <entry key="gitignore" value="17" />
-          <entry key="go" value="697" />
+          <entry key="go" value="722" />
           <entry key="log" value="1" />
           <entry key="mod" value="42" />
           <entry key="proto" value="13" />
@@ -76,7 +77,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="DTD" value="42" />
-          <entry key="Go" value="697" />
+          <entry key="Go" value="722" />
           <entry key="PLAIN_TEXT" value="64" />
           <entry key="Python" value="429" />
           <entry key="TOML file" value="11" />
@@ -90,8 +91,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stan/bench2.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
+            <state relative-caret-position="663">
+              <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.MD">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/go.mod">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
@@ -105,7 +124,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/stan/subscriber/bench2_subscirber.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="357">
@@ -198,8 +217,9 @@
         <option value="$PROJECT_DIR$/2020-02-05.log" />
         <option value="$PROJECT_DIR$/stan/subscriber/bench2_subscirber.go" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/stan/bench2.go" />
         <option value="$PROJECT_DIR$/conf/config.go" />
+        <option value="$PROJECT_DIR$/stan/bench2.go" />
+        <option value="$PROJECT_DIR$/stan/decouple/publisher.go" />
       </list>
     </option>
   </component>
@@ -210,10 +230,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="55" />
-    <option name="y" value="129" />
-    <option name="width" value="1174" />
-    <option name="height" value="1010" />
+    <option name="x" value="271" />
+    <option name="y" value="28" />
+    <option name="width" value="1011" />
+    <option name="height" value="1012" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -221,7 +241,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -249,21 +268,11 @@
               <item name="natsmicro" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
-            <path>
-              <item name="natsmicro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Go Module &lt;natsmicro&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
-            </path>
-            <path>
-              <item name="natsmicro" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Go Module &lt;natsmicro&gt;" type="20ee2d1f:SyntheticLibraryElementNode" />
-              <item name="nats.go@v1.9.1" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -275,20 +284,20 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/stan/subscriber" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="go.vgo" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/stan" />
-      <recent name="$PROJECT_DIR$/helloworld2/py/django_migrate/gadmin/config" />
-      <recent name="$PROJECT_DIR$/helloworld2/py" />
-      <recent name="$PROJECT_DIR$/helloworld2" />
-      <recent name="$PROJECT_DIR$/common/extra_proto" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/stan/subscriber" />
       <recent name="$PROJECT_DIR$/helloworld2/py/django_migrate" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/helloworld2/py" />
+      <recent name="$PROJECT_DIR$/helloworld2" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/stan/decouple" />
+      <recent name="$PROJECT_DIR$/stan" />
+      <recent name="$PROJECT_DIR$/helloworld2/py/django_migrate/gadmin/config" />
       <recent name="$PROJECT_DIR$/helloworld2/py" />
       <recent name="$PROJECT_DIR$/helloworld2" />
     </key>
@@ -385,9 +394,9 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="55" y="129" width="1174" height="1010" extended-state="0" />
+    <frame x="271" y="28" width="1011" height="1012" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32651246" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30994764" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -399,7 +408,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.47635934" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.33766234" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -422,20 +431,6 @@
     <proxy>https://goproxy.cn</proxy>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/helloworld2/rpc/proto/helloworld/helloworld.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/helloworld2/rpc/nrpc_client/client_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="26" selection-start-line="26" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/helloworld/router/router.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -539,9 +534,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/helloworld/README.MD" />
-    <entry file="file://$PROJECT_DIR$/README.MD">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/helloworld2/py/django_migrate/requirments.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -635,13 +627,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/go.mod">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/helloworld2/app/model/gadmin_user/gadmin_user_entity.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -684,28 +669,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/2020-02-05.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/2020-02-05.log" />
     <entry file="file://$PROJECT_DIR$/stan/bench.go" />
     <entry file="file://$USER_HOME$/go/pkg/mod/github.com/nats-io/nats.go@v1.9.1/nats.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
           <caret line="48" column="52" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/config.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stan/bench2.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="36" column="16" selection-start-line="36" selection-start-column="16" selection-end-line="36" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -716,10 +685,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/stan/decouple/subscirber.go" />
+    <entry file="file://$PROJECT_DIR$/stan/decouple/publisher.go" />
+    <entry file="file://$PROJECT_DIR$/stan/bench2.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/go.mod">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/config.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/stan/subscriber/bench2_subscirber.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.MD">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
