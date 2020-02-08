@@ -3,17 +3,13 @@ package nrpc_server
 import (
 	"context"
 	"fmt"
-	"github.com/gogf/gf/os/glog"
 	"log"
+	"natsmicro/common/natsConn"
 	"os"
-	"time"
-
 	// This is the package containing the generated *.pb.go and *.nrpc.go
 	// files.
 	"natsmicro/conf"
 	"natsmicro/helloworld/rpc/proto/helloworld"
-
-	"github.com/nats-io/nats.go"
 )
 
 // server implements the helloworld.GreeterServer interface.
@@ -23,8 +19,8 @@ type server struct{}
 // the Greeter service.
 func (s *server) SayHello(ctx context.Context, req helloworld.HelloRequest) (resp helloworld.HelloReply, err error) {
 	resp.Message = "Hello " + req.Name
-	glog.Info(resp.Message)
-	time.Sleep(50 * time.Millisecond)
+	//glog.Info(resp.Message)
+	//time.Sleep(50 * time.Millisecond)
 	return
 }
 
@@ -34,10 +30,7 @@ func StartServer() {
 		natsURL = os.Args[1]
 	}
 	// Connect to the NATS server.
-	nc, err := nats.Connect(natsURL, nats.Timeout(5*time.Second))
-	if err != nil {
-		log.Fatal(err)
-	}
+	nc := natsConn.GetNatConn(natsURL, "natsConn")
 	defer nc.Close()
 
 	// Our server implementation.

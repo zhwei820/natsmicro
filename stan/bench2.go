@@ -34,7 +34,7 @@ func main() {
 	//	log.Printf("sub1: %s\n", string(m.Data))
 	//}, stan.StartWithLastReceived())
 
-	N := 1000000
+	N := 100000
 	//N := 100000
 	donewg.Add(N)
 

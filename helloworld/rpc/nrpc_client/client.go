@@ -1,13 +1,10 @@
 package nrpc_client
 
 import (
-	"log"
+	"natsmicro/common/natsConn"
 	"natsmicro/conf"
 	"natsmicro/helloworld/rpc/proto/helloworld"
 	"os"
-	"time"
-
-	"github.com/nats-io/nats.go"
 )
 
 var HelloWordNrpcCli *helloworld.GreeterClient
@@ -20,11 +17,7 @@ func Init() {
 	if len(os.Args) == 2 {
 		natsURL = os.Args[1]
 	}
-	// Connect to the NATS server.
-	nc, err := nats.Connect(natsURL, nats.Timeout(5*time.Second))
-	if err != nil {
-		log.Fatal(err)
-	}
+	nc := natsConn.GetNatConn(natsURL, "natsConn")
 	//defer nc.Close()
 
 	// This is our generated client.
