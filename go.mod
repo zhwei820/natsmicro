@@ -11,3 +11,5 @@ require (
 )
 
 replace github.com/nats-rpc/nrpc v0.0.0-20190920042445-3ae2c6c6aad4 => github.com/zhwei820/nrpc v0.0.0-20191028151421-a74606762646
+
+go 1.13
