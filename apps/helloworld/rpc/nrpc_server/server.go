@@ -3,6 +3,7 @@ package nrpc_server
 import (
 	"context"
 	"fmt"
+	"github.com/nats-io/nats.go"
 	"log"
 	"natsmicro/common/natsConn"
 	"os"
@@ -23,6 +24,8 @@ func (s *server) SayHello(ctx context.Context, req helloworld.HelloRequest) (res
 	//time.Sleep(50 * time.Millisecond)
 	return
 }
+
+var closeChan = make(chan interface{}, 0)
 
 func StartServer() {
 	var natsURL = nats.DefaultURL
@@ -48,10 +51,17 @@ func StartServer() {
 		if err != nil {
 			log.Fatal(err)
 		}
-		defer sub.Unsubscribe()
+		defer func(sub *nats.Subscription, ii int) {
+			sub.Unsubscribe()
+			//glog.Info("sub.Unsubscribe", ii)
+		}(sub, ii)
 
 	}
 	// Keep running until ^C.
 	fmt.Println("server is running, ^C quits.")
-	select {}
+	<-closeChan
+}
+
+func StopServer() {
+	closeChan <- nil
 }

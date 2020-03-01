@@ -3,3 +3,4 @@ stan/subscriber/bench2_subscirber
 stan/bench2
 *.log
 *.pyc
+logs

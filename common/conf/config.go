@@ -32,14 +32,14 @@ func InitConfig(nacusIp string, nacusPort uint64, dataId, group string) {
 		"clientConfig":  clientConfig,
 	})
 	if err != nil {
-		glog.Error(err)
+		glog.Fatal(err)
 	}
 	res, err := configClient.GetConfig(vo.ConfigParam{
 		DataId: dataId,
 		Group:  group})
 
 	if err != nil {
-		glog.Error(err)
+		glog.Fatal(err)
 	}
 	glog.Info(res)
 	gcfg.SetContent(res)
